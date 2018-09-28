@@ -15,7 +15,7 @@ class MyRouteBuilder extends RouteBuilder {
      * Let's configure the Camel routing rules using Groovy code...
      */
     void configure() {
-    		JacksonDataFormat format = new JacksonDataFormat(Map.class);
+    	JacksonDataFormat format = new JacksonDataFormat(Map.class);
     
         from("file:data")
         .to('log:start')
